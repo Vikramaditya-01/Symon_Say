@@ -10,7 +10,6 @@ let level = 0;
 
 document.addEventListener("keypress", function () {
     if (!started) {
-        console.log("game started");
         started = true;
         levelup();
     }
@@ -42,7 +41,7 @@ function levelup() {
     let rndcolor = btns[rndidx];
     let rndBtn = document.querySelector(`.${rndcolor}`);
     gameSequence.push(rndcolor);
-    console.log(gameSequence);
+    
     gameflash(rndBtn);
 }
 
